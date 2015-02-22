@@ -19,7 +19,7 @@ Content of the delivery
 
 1. The raw data:[here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 2. A tidy data set (result of the run the run_analysis.R - cf The instruction list/script) 
-3. A code book describing each variable and its values in the tidy data set.  
+3. A code book describing each variable and its values in the tidy data set.  (cf https://github.com/jscaze/DS03_GettingAndCleaningData_project/)
 4. An explicit and exact recipe we used to go from 1 -> 2,3 (In THIS READ ME - cf The instruction list/script)
 
 ### The raw data
@@ -27,7 +27,7 @@ Here are the [data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles
 
 ### The tidy data set
  * A tidy data set (result of the run the run_analysis.R - cf The instruction list/script) 
- * a file for the answer of question 5 : resultQ5.txt
+ * a file for the answer of question 5 : resultQ5.txt (to generate it, please follow The instruction list/script)
 
 ### The code book
  * cf https://github.com/jscaze/DS03_GettingAndCleaningData_project/
@@ -38,17 +38,17 @@ Here are the [data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles
 3. Step 3 - launch R
 4. Step 4 - download the R script run_analysis.R and put it in the same folder(cf STEP 2)
 5. Step 5 - Open R studio or R console
-6  Step 6 - run the command (cf STEP 2): setwd("Path where you put run_analysis.R")
-7  Step 7 - run the command : source("run_analysis.R")
-8  Step 8 - run the command : dfTinyDF <- run_analysis(".")
-9  Step 9 - to run question 5 run the command : run_analysis(".")
+6. Step 6 - run the command (cf STEP 2): setwd("Path where you put run_analysis.R")
+7. Step 7 - run the command : source("run_analysis.R")
+8. Step 8 - run the command : dfTinyDF <- run_analysis(".")
+9. Step 9 - to run question 5 run the command : run_summary(".")
 	    file will be generated in your current folder (cf STEP6). Name of the file : resultQ5.txt
 
 Selection of the Field
 ====================
 
 As you probably noticed, I decided to select only the field which contain "mean()" or "std()". 
-To my understanding, only the value with "mean()" or "std()" are the fact that we want to keep.
+To my understanding, only the value with "mean()" or "std()" are the facts that we want to keep.
 
 Contributors
 ====================
