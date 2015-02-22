@@ -67,7 +67,7 @@ run_summary <- function(directory) {
   dfTinyDF <- run_analysis(directory)
 
   #calculate the mean of each variable for each activity and each subject.
-  dfSummary <- aggregate(dfTinyDF[, 4:89], list(dfTinyDF$activityLabel, dfTinyDF$subjectId), mean)
+  dfSummary <- aggregate(dfTinyDF[, 4:69], list(dfTinyDF$activityLabel, dfTinyDF$subjectId), mean)
 
   #rename the 2 first columns
   colnames(dfSummary)[1:2] <- c("activityLabel","subjectId")
